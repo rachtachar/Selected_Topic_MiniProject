@@ -1,0 +1,22 @@
+=== 10 คำถามสำหรับทดสอบ Codebase RAG (Dataset: Hugging Face mteb/CodeSearchNetRetrieval) ===
+
+1. How does post_content work in data_pipeline.py?
+2. Who calls bulk_load?
+3. How does matchall in string_utils.py scan for regex patterns?
+4. What modules does network_client.py import?
+5. How does closest_ds_partition in api_handlers.py find the target date?
+6. Which functions call Sina video downloader?
+7. Explain how export_instance works in crypto_security.py
+8. What does data_pipeline.py import?
+9. How does get_video_url_from_video_id work in file_storage.py?
+10. Show the function relationships in database_ops.py
+
+
+=== คำถามทดสอบการเขียนโค้ดเพิ่ม (Code Generation) ===
+11. Write a custom data loader function using bulk_load in database_ops.py
+
+
+=== คำถามทดสอบคุยทั่วไปและความจำ (General Chat Mode) ===
+12. My name is Earth
+13. What is my name ?
+14. Explain what Python decorators are with a simple code example

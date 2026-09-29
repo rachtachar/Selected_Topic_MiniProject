@@ -1,0 +1,17 @@
+{
+  "project_path": "F:\\DSSI3\\selected topic\\mini_project\\online_dataset\\src\\codesearchnet",
+  "indexed_at": "2026-09-29 09:54:54",
+  "files_count": 8,
+  "chunks_count": 63,
+  "embedding_model": "nomic-embed-text",
+  "vector_db_path": "F:/DSSI3/selected topic/mini_project/vector_db",
+  "graph_db_path": "F:/DSSI3/selected topic/mini_project/graph_db",
+  "graph_stats": {
+    "functions": 61,
+    "modules": 8,
+    "classes": 0,
+    "calls": 372,
+    "imports": 46
+  },
+  "total_indexing_time_seconds": 15.16
+}
