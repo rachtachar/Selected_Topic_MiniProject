@@ -17,27 +17,7 @@
 
 ---
 
-## สถาปัตยกรรมระบบ (System Architecture)
 
-```mermaid
-graph TD
-    User([User / Developer]) -->|Prompt| UI[Streamlit Web Interface app.py]
-    UI --> Router{Question Router}
-    
-    subgraph "Hybrid RAG Engine"
-        Router -->|ถามการทำงาน / อัลกอริทึม / Code Gen| VectorRoute[Vector Retriever]
-        Router -->|ถามใครเรียกใคร / โครงสร้าง / Imports| GraphRoute[Graph Retriever]
-        
-        VectorRoute -->|Semantic Search| FAISS[(FAISS Vector Store: vector_db)]
-        GraphRoute -->|Cypher Query| Kuzu[(Kuzu Graph DB: graph_db)]
-        
-        FAISS -->|Code Chunks + Line No.| ContextBuilder[Context Aggregator]
-        Kuzu -->|Caller / Callee / Imports| ContextBuilder
-    end
-    
-    ContextBuilder -->|Prompt + Context| LLM[Local LLM: qwen2.5-coder:7b via Ollama]
-    LLM -->|Answer + Source Snippets| UI
-```
 
 ---
 
